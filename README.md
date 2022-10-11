@@ -5,8 +5,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot]
-    ![Screenshot 2022-10-11 at 9 09 39 PM](https://user-images.githubusercontent.com/38833326/195137774-aad0af79-f4bc-42a0-bf4d-ce86864ef1b8.png)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -22,85 +21,163 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screenshot 2022-10-11 at 9 09 39 PM](https://user-images.githubusercontent.com/38833326/195137774-aad0af79-f4bc-42a0-bf4d-ce86864ef1b8.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/hashmi7917/Frontend-Menoter-QR-Challenge-Completed.git)
+- Live Site URL: [Add live site URL here](https://hashmi7917.github.io/Frontend-Menoter-QR-Challenge-Completed/)
 
 ## My process
 
+- First of all i code whole markup
+- And then started styles cascading
+- Finally Made it responsive
+
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- CSS root variables
+- Mobile responsive webiste
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Html markup and simple layots with css, custom properties with root variables, managing margin & paddings how to use 'rem' for font size and lastly responsive design with using max-width and vw,vh units for sizes, thanks to frontend mentor.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="qr-box">
+        <div class="main">
+          <img class="qr-img" src="./images/image-qr-code.png" alt="qr" />
+        </div>
+        <div class="content">
+          <h2>Improve your front-end skills by building projects</h2>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/hashmi7917">Hashmi</a>.
+      </div>
+    </div>
+  </body>
+</html>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+/* COLORS */
+:root {
+  --primary: hsl(212, 45%, 89%);
+  --qr-box: hsl(0, 0%, 100%);
+  --qr-bg: hsl(218, 44%, 22%);
+  --content: hsl(220, 15%, 55%);
+  --font-outfit: "Outfit", sans-serif;
+}
+
+html {
+  /* to easily calculate rem values */
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 15vh;
+  background-color: var(--primary);
+}
+
+.qr-box {
+  background-color: var(--qr-box);
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.qr-img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.content {
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  font-family: var(--font-outfit);
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+p {
+  color: var(--content);
+  font-size: 1.6rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I found that i got probles while settings image width, and properly layouting html markup with css, also faced difficulties in setting constant with of elements.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Example resource 1](https://stackoverflow.com/questions/10189356/how-to-add-screenshot-to-readmes-in-github-repository) - This helped me for adding screenshot in github readme. I really liked this website and will use it going forward.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Hashmi](https://hashmi7917.github.io/hashmiportfolio/)
+- Frontend Mentor - [@hashmi-twitter](https://twitter.com/@hash_m_ee)
+- Twitter - [@hashmi-github](https://github.com/hashmi7917)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
