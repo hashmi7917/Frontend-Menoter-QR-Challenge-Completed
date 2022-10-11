@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+/* COLORS */
+:root {
+  --primary: hsl(212, 45%, 89%);
+  --qr-box: hsl(0, 0%, 100%);
+  --qr-bg: hsl(218, 44%, 22%);
+  --content: hsl(220, 15%, 55%);
+  --font-outfit: "Outfit", sans-serif;
+}
+
+html {
+  /* to easily calculate rem values */
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 15vh;
+  background-color: var(--primary);
+}
+
+.qr-box {
+  background-color: var(--qr-box);
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.qr-img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.content {
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  font-family: var(--font-outfit);
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+p {
+  color: var(--content);
+  font-size: 1.6rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+}
