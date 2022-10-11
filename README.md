@@ -65,26 +65,22 @@ To see how you can add code snippets, see below:
     <title>Frontend Mentor | QR code component</title>
   </head>
   <body>
-    <div class="container">
-      <div class="qr-box">
-        <div class="main">
-          <img class="qr-img" src="./images/image-qr-code.png" alt="qr" />
-        </div>
-        <div class="content">
-          <h2>Improve your front-end skills by building projects</h2>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
+    <main role="main">
+      <div class="container" role="container">
+        <div class="qr-box" role="content">
+          <div>
+            <img class="qr-img" src="./images/image-qr-code.png" alt="qr" />
+          </div>
+          <div class="content">
+            <h1>Improve your front-end skills by building projects</h1>
+            <p>
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </p>
+          </div>
         </div>
       </div>
-      <div class="footer">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/hashmi7917">Hashmi</a>.
-      </div>
-    </div>
+    </main>
   </body>
 </html>
 ```
@@ -142,7 +138,7 @@ body {
   font-family: var(--font-outfit);
 }
 
-h2 {
+h1 {
   font-size: 2.2rem;
   font-weight: 700;
 }
@@ -150,11 +146,6 @@ h2 {
 p {
   color: var(--content);
   font-size: 1.6rem;
-}
-
-.footer {
-  text-align: center;
-  padding: 1rem;
 }
 ```
 
