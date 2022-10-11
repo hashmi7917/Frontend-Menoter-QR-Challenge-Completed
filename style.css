@@ -50,7 +50,7 @@ body {
   font-family: var(--font-outfit);
 }
 
-h2 {
+h1 {
   font-size: 2.2rem;
   font-weight: 700;
 }
@@ -58,9 +58,4 @@ h2 {
 p {
   color: var(--content);
   font-size: 1.6rem;
-}
-
-.footer {
-  text-align: center;
-  padding: 1rem;
 }
