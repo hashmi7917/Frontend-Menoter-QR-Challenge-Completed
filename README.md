@@ -5,9 +5,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](
+  - [Screenshot]
     ![Screenshot 2022-10-11 at 9 09 39 PM](https://user-images.githubusercontent.com/38833326/195137774-aad0af79-f4bc-42a0-bf4d-ce86864ef1b8.png)
-    )
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
