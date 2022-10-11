@@ -65,9 +65,9 @@ To see how you can add code snippets, see below:
     <title>Frontend Mentor | QR code component</title>
   </head>
   <body>
-    <main role="main">
-      <div class="container" role="container">
-        <div class="qr-box" role="content">
+    <main>
+      <div class="container">
+        <div class="qr-box">
           <div>
             <img class="qr-img" src="./images/image-qr-code.png" alt="qr" />
           </div>
